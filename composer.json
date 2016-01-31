@@ -1,0 +1,20 @@
+{
+	"name": "cmsgears/plugin-piwik",
+	"description": "The Piwik Plugin for CMSGears. It can be used to call Piwik APIs.",
+	"homepage": "http://www.cmsgears.org",
+	"type": "package",
+	"keywords": [ "yii2", "cmsgears", "plugin", "piwik" ],
+	"license": "GPLv3",
+	"support": {
+		"resources": "https://www.cmsgears.org"
+	},
+	"autoload": {
+		"psr-4": {
+			"cmsgears\\piwik\\": ""
+		}
+	},
+    "require": {
+        "php": ">=5.4.0",
+        "cmsgears/module-core": "*"
+    }
+}
