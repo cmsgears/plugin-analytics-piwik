@@ -1,5 +1,5 @@
 {
-	"name" : "cmsgears/plugin-analytics-piwik",
+	"name" : "cmsgears/plugin-piwik-analytics",
 	"description" : "The Piwik Analytics Plugin for CMSGears. It can be used to call Piwik APIs.",
 	"homepage" : "http://www.cmsgears.org",
 	"type" : "package",
@@ -12,7 +12,7 @@
 	],
 	"license" : "GPLv3",
 	"support" : {
-		"source" : "http://www.cmsgears.org/downloads/plugins/analytics-piwik",
+		"source" : "http://www.cmsgears.org/downloads/plugins/piwik-analytics",
 		"forum" : "http://forum.cmsgears.org/",
 		"resources" : "http://resources.cmsgears.org/",
 		"issues" : "https://www.amazingdesk.com/cmsgears/issues/",
@@ -20,7 +20,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"cmsgears\\analytics\\piwik\\" : ""
+			"cmsgears\\piwik\\analytics\\" : ""
 		}
 	},
 	"require" : {
