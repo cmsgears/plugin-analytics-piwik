@@ -10,7 +10,7 @@
 		"piwik",
 		"analytics"
 	],
-	"license" : "GPLv3",
+	"license": "GPL-3.0-or-later",
 	"support" : {
 		"source" : "http://www.cmsgears.org/downloads/plugins/piwik-analytics",
 		"forum" : "http://forum.cmsgears.org/",
