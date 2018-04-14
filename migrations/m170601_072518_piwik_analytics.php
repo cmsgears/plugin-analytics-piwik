@@ -64,12 +64,12 @@ class m170601_072518_piwik_analytics extends \yii\db\Migration {
 
 		$config	= Form::findBySlug( 'config-piwik-analytics', CoreGlobal::TYPE_SYSTEM );
 
-		$columns = [ 'formId', 'name', 'label', 'type', 'compress', 'validators', 'order', 'icon', 'htmlOptions' ];
+		$columns = [ 'formId', 'name', 'label', 'type', 'compress', 'meta', 'active', 'validators', 'order', 'icon', 'htmlOptions' ];
 
 		$fields	= [
-			[ $config->id, 'active', 'Active', FormField::TYPE_TOGGLE, false, 'required', 0, NULL, '{"title":"Active"}' ],
-			[ $config->id, 'global', 'Global', FormField::TYPE_TOGGLE, false, 'required', 0, NULL, '{"title":"Global"}' ],
-			[ $config->id, 'token', 'Token', FormField::TYPE_TEXT, false, 'required', 0, NULL, '{"title":"Token","placeholder":"Token"}' ]
+			[ $config->id, 'active', 'Active', FormField::TYPE_TOGGLE, false, true, true, 'required', 0, NULL, '{"title":"Active"}' ],
+			[ $config->id, 'global', 'Global', FormField::TYPE_TOGGLE, false, true, true, 'required', 0, NULL, '{"title":"Global"}' ],
+			[ $config->id, 'token', 'Token', FormField::TYPE_TEXT, false, true, true, 'required', 0, NULL, '{"title":"Token","placeholder":"Token"}' ]
 		];
 
 		$this->batchInsert( $this->prefix . 'core_form_field', $columns, $fields );
